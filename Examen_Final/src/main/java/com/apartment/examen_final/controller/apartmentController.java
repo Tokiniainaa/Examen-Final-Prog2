@@ -20,9 +20,7 @@ public class apartmentController {
     @PostMapping("/insertApartment")
     public void insertApartment(@RequestBody Apartment toInsert){
 
-        service.insertApartment(toInsert
-
-        );
+        service.insertApartment(toInsert);
     }
     @GetMapping("/allApartments")
     public List<Apartment> findAllApartment() throws SQLException {
